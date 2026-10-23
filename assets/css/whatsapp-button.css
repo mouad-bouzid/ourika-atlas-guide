@@ -1,0 +1,68 @@
+/* ===== Floating WhatsApp button =====
+   Uses the site variables from index.html: --paper, --pine, --accent,
+   --r-pill, --text-sm, --shadow-card, --dur, --ease. */
+
+.float-wa {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  z-index: 900;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .6);
+  animation: wa-pulse 2.4s ease-in-out infinite;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.float-wa svg { width: 29px; height: 29px; fill: #fff; }
+
+/* "Need help?" label — shown on hover / keyboard focus */
+.float-wa__text {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translate(8px, -50%);
+  padding: .6rem 1rem;
+  border-radius: var(--r-pill);
+  background: var(--paper);
+  color: var(--pine);
+  border: 1px solid var(--accent);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s var(--dur);
+}
+.float-wa:hover .float-wa__text,
+.float-wa:focus-visible .float-wa__text {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -50%);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s 0s;
+}
+
+/* Pulse */
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .6); }
+  50% { box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .9), 0 0 0 10px rgba(37, 211, 102, .12); }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .float-wa { width: 52px; height: 52px; bottom: 18px; right: 18px; }
+  .float-wa svg { width: 24px; height: 24px; }
+}
+
+/* Accessibility: no animation */
+@media (prefers-reduced-motion: reduce) {
+  .float-wa { animation: none; }
+}

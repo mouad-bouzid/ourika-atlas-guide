@@ -1,0 +1,67 @@
+/* ===== Ourika Atlas Guide — motion layer =====
+   GSAP + ScrollTrigger, Lenis, and vanilla ports of React Bits
+   (Blur Text, Light Rays, Star Border, Count Up).
+   Colours come from the existing site variables — nothing is redefined here. */
+
+/* ----- Lenis (from lenis.css) ----- */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: clip; }
+.lenis.lenis-smooth iframe { pointer-events: none; }
+
+/* ----- Light Rays (hero background) ----- */
+.light-rays {
+  position: absolute;
+  inset: 0;
+  z-index: -1;               /* above the photo (-2), below the existing dark overlay (::after) */
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 1.8s var(--ease);
+}
+.light-rays.is-ready { opacity: .5; }
+.light-rays canvas { display: block; width: 100%; height: 100%; }
+
+/* ----- Blur Text (hero title) ----- */
+.blur-word { display: inline-block; will-change: transform, filter, opacity; }
+@media (prefers-reduced-motion: no-preference) {
+  /* hidden until JS has split the words; failsafe shows it after 2s if scripts fail */
+  .hero__title:not(.is-split) { opacity: 0; animation: motion-failsafe 0s linear 2s forwards; }
+}
+@keyframes motion-failsafe { to { opacity: 1; } }
+
+/* ----- Count Up ----- */
+[data-countup] { font-variant-numeric: tabular-nums; }
+
+/* ----- Star Border (primary CTA) ----- */
+.cta-orbit--star .cta-orbit__text { position: relative; overflow: hidden; isolation: isolate; }
+.cta-orbit--star .cta-orbit__text::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  z-index: -1;
+  border-radius: inherit;
+  background: var(--glacier);
+  transition: background var(--dur-fast) var(--ease);
+}
+.cta-orbit--star:hover .cta-orbit__text::before { background: var(--glacier-deep); }
+.star-border__glow {
+  position: absolute;
+  z-index: -2;
+  width: 300%;
+  height: 50%;
+  border-radius: 50%;
+  opacity: .8;
+  pointer-events: none;
+  background: radial-gradient(circle, var(--accent), transparent 10%);
+  animation: 7s linear infinite alternate;
+}
+.star-border__glow--bottom { bottom: -11px; right: -250%; animation-name: star-bottom; }
+.star-border__glow--top    { top: -10px;    left: -250%;  animation-name: star-top; }
+@keyframes star-bottom { 0% { transform: translate(0, 0); opacity: 1; } 100% { transform: translate(-100%, 0); opacity: 0; } }
+@keyframes star-top    { 0% { transform: translate(0, 0); opacity: 1; } 100% { transform: translate(100%, 0);  opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .star-border__glow { animation: none !important; }
+}

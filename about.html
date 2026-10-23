@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>About Ourika Atlas Guide | Local Guide in the Atlas Mountains</title>
+<meta name="description" content="Meet Ourika Atlas Guide and Mohamed Oudra, a Berber mountain guide born in the Ourika Valley. Local Atlas Mountains hiking, Setti Fatma waterfalls and Marrakech day trips." />
+<meta name="theme-color" content="#101412" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ourika Atlas Guide" />
+<meta property="og:title" content="About Ourika Atlas Guide | Local Guide in the Atlas Mountains" />
+<meta property="og:description" content="A local Berber mountain guide in the Ourika Valley offering hiking, Setti Fatma waterfalls and day trips from Marrakech." />
+<meta property="og:image" content="img/background-2.png" />
+<link rel="icon" type="image/png" href="img/Logo/favicon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Ubuntu+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
+
+<style>
+/* ===== Ourika Atlas Guide: same overrides as the homepage (loaded after the template CSS) ===== */
+:root{--accent:#E4582C}
+html,body{overflow-x:clip}
+.label::before{content:"";display:inline-block;width:18px;height:1px;margin-right:.6rem;vertical-align:middle;background:var(--accent)}
+.footer__h::before{display:none}
+.btn--dark:hover{background:var(--accent)}
+.btn--ghost:hover{border-color:var(--accent);color:var(--accent)}
+.input:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(228,88,44,.15)}
+.nav a::after{background:var(--accent)}
+
+/* Header (logo + links + "Plan a trip" inside the nav, as on the homepage) */
+.brand{display:inline-flex;align-items:center;margin-right:auto}
+.brand__logo{height:46px;width:auto;max-width:52vw;object-fit:contain}
+.nav__links{display:contents}
+.nav a.header__signin{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.8rem 1.5rem;border:1px solid currentColor;border-radius:var(--r-pill);font-family:var(--font-body);font-size:var(--text-base);font-weight:500;letter-spacing:0;line-height:1;color:inherit;background:transparent}
+.nav a.header__signin::after{display:none}
+.header[data-header] .nav a.header__signin:hover{background:var(--accent);border-color:var(--accent);color:var(--snow)}
+.menu-open .header[data-header]{-webkit-backdrop-filter:none;backdrop-filter:none}
+@media (min-width:961px){
+.nav__links{display:flex;align-items:center;gap:clamp(1.25rem,2.6vw,2.75rem)}
+.header__tools{display:none}
+.header__inner{display:grid;grid-template-columns:1fr auto 1fr;gap:2rem}
+.brand{grid-column:1;justify-self:start;margin-right:0}
+.nav{display:contents}
+.nav__links{grid-column:2}
+.nav a.header__signin{grid-column:3;justify-self:end}}
+@media (max-width:960px){
+.nav a.header__signin{margin-top:1.5rem;background:var(--pine);color:var(--snow);border-color:var(--pine)}}
+
+.acc__btn:hover::after{background:var(--accent);color:var(--snow)}
+.faq .shead p:not(.label){max-width:60ch}
+
+/* ===== Footer ===== */
+.footer{background:var(--pine-night);color:rgba(255,255,255,.72);padding-top:clamp(3.5rem,3rem + 3vw,6rem);overflow:hidden}
+.footer a:hover{color:var(--snow)}
+.footer__top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr);gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.12)}
+.footer__logo{height:56px;width:auto;margin-bottom:1.25rem}
+.footer__title{font-family:var(--font-display);color:var(--snow);font-size:var(--text-xl);letter-spacing:-.025em;line-height:1.15}
+.footer__sub{margin-top:.75rem;max-width:42ch}
+.footer__social{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+.footer__social a{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.25);color:var(--snow);transition:background var(--dur-fast),border-color var(--dur-fast),transform var(--dur) var(--ease)}
+.footer__social a:hover{background:var(--accent);border-color:var(--accent);color:var(--snow);transform:translateY(-2px)}
+.footer__social svg{width:20px;height:20px}
+.footer__cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+.footer__h{color:rgba(255,255,255,.5);margin-bottom:1rem}
+.footer__cols li+li{margin-top:.55rem}.footer address{font-style:normal;line-height:1.9;overflow-wrap:anywhere}
+.footer__word{margin:.05em 0 0;padding-bottom:.12em;text-align:center;font-family:var(--font-display);font-weight:600;line-height:1.05;font-size:calc((min(100vw,var(--container)) - 2 * var(--gutter)) / 6.4);letter-spacing:-.04em;color:#18221F;user-select:none}
+.footer__bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem;padding-block:1.5rem 5rem;border-top:1px solid rgba(255,255,255,.12);font-size:var(--text-sm)}
+@media (max-width:900px){.footer__top{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.footer__cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ===== Floating WhatsApp (lower-left) ===== */
+.whatsapp-float{position:fixed;left:max(1rem,env(safe-area-inset-left));bottom:max(1rem,env(safe-area-inset-bottom));z-index:80;display:flex;align-items:center;max-width:calc(100vw - 2rem);border-radius:var(--r-pill)}
+.whatsapp-float img{width:58px;height:58px;flex:none;border-radius:50%;box-shadow:0 8px 24px -6px rgba(16,20,18,.45);transition:transform var(--dur) var(--ease)}
+.whatsapp-float__text{margin-left:-1.6rem;padding:.55rem 1rem .55rem 2.1rem;border-radius:var(--r-pill);background:var(--paper);color:var(--pine);border:1px solid var(--accent);font-size:var(--text-sm);font-weight:500;line-height:1;white-space:nowrap;box-shadow:var(--shadow-card);opacity:0;visibility:hidden;transform:translateX(-10px);transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease),visibility 0s var(--dur)}
+.whatsapp-float img{position:relative;z-index:1}
+.whatsapp-float:hover img,.whatsapp-float:focus-visible img{transform:scale(1.06)}
+.whatsapp-float:hover .whatsapp-float__text,.whatsapp-float:focus-visible .whatsapp-float__text{opacity:1;visibility:visible;transform:none;transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease),visibility 0s 0s}
+
+
+/* About page extras */
+.brand__logo--dark{display:none}
+.header.is-scrolled .brand__logo--light,.menu-open .brand__logo--light{display:none}
+.header.is-scrolled .brand__logo--dark,.menu-open .brand__logo--dark{display:block}
+.thero__img{object-position:50% 40%}
+.ledger dd{font-size:clamp(1.6rem,1.2rem + 1.4vw,2.4rem)}
+.figures__grid dd{font-size:clamp(1.5rem,1rem + 1.6vw,2.6rem);letter-spacing:-.03em;overflow-wrap:anywhere}
+.tcard__price{font-size:var(--text-base)}
+/* Figure boxes: photo backgrounds, readable white text, small orange shadow */
+.figures__grid>div{position:relative;min-height:190px;justify-content:flex-end;gap:.35rem;color:var(--snow);background-size:cover;background-position:center;background-repeat:no-repeat;box-shadow:0 0 0 1px rgba(228,88,44,.55),0 10px 22px -10px rgba(228,88,44,.65);transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease)}
+.figures__grid>div:hover{transform:translateY(-3px);box-shadow:0 0 0 1px var(--accent),0 14px 26px -10px rgba(228,88,44,.8)}
+.figures__grid>div:nth-child(1){background-image:linear-gradient(to top,rgba(8,12,10,.82),rgba(8,12,10,.15) 75%),url("img/Gallery/11.jpg")}
+.figures__grid>div:nth-child(2){background-image:linear-gradient(to top,rgba(8,12,10,.82),rgba(8,12,10,.15) 75%),url("img/marrakech-medina-walking-tour.png")}
+.figures__grid>div:nth-child(3){background-image:linear-gradient(to top,rgba(8,12,10,.82),rgba(8,12,10,.15) 75%),url("img/Gallery/5.jpg")}
+.figures__grid>div:nth-child(4){background-image:linear-gradient(to top,rgba(8,12,10,.82),rgba(8,12,10,.15) 75%),url("img/day-trips/Atlas\ Trek\ &\ Setti\ Fatma\ Waterfalls\ Adventure.png")}
+
+
+
+/* .figures__grid>div:nth-child(1){background-position:50% 65%}
+.figures__grid>div:nth-child(2){background-position:55% 45%}
+.figures__grid>div:nth-child(3){background-position:50% 85%}
+.figures__grid>div:nth-child(4){background-position:50% 30%} */
+
+.figures__grid>div:nth-child(2){background-size:contain;}
+.figures__grid>div:nth-child(3){background-size:contain;}
+
+
+
+
+.figures__grid>div dt,.figures__grid>div:nth-child(3) dt{color:rgba(255,255,255,.85)}
+.figures__grid>div dd,.figures__grid>div:nth-child(3) dd{color:var(--snow)}
+@media (max-width:480px){.figures__grid>div{min-height:150px}}
+.split__actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
+@media (max-width:480px){.split__actions .btn{flex:1 1 100%}}
+
+/* ===== Header scroll fix: stacked logos, solid bar, dark burger, no ghosting ===== */
+.brand{display:grid;align-items:center}
+.brand__logo{grid-area:1/1;transition:opacity var(--dur-fast) var(--ease)}
+.brand__logo--light,.brand__logo--dark{display:block!important}
+.brand__logo--dark{opacity:0;visibility:hidden}
+.header.is-scrolled .brand__logo--light,.menu-open .brand__logo--light{opacity:0;visibility:hidden}
+.header.is-scrolled .brand__logo--dark,.menu-open .brand__logo--dark{opacity:1;visibility:visible}
+.header{transition:background var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.header.is-scrolled{padding-block:.8rem;background:rgba(243,244,241,.97);color:var(--pine);box-shadow:0 1px 0 var(--fog-deep)}
+.header.is-scrolled::before{display:none}
+.header.is-scrolled .burger,.menu-open .burger{color:var(--pine)}
+@media (max-width:960px){.header,.header.is-scrolled,.menu-open .header{-webkit-backdrop-filter:none;backdrop-filter:none}}
+
+/* ===== Floating WhatsApp button =====
+   Uses the site variables from index.html: --paper, --pine, --accent,
+   --r-pill, --text-sm, --shadow-card, --dur, --ease. */
+
+.float-wa {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  z-index: 900;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .6);
+  animation: wa-pulse 2.4s ease-in-out infinite;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.float-wa svg { width: 29px; height: 29px; fill: #fff; }
+
+/* "Need help?" label — shown on hover / keyboard focus */
+.float-wa__text {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translate(8px, -50%);
+  padding: .6rem 1rem;
+  border-radius: var(--r-pill);
+  background: var(--paper);
+  color: var(--pine);
+  border: 1px solid var(--accent);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s var(--dur);
+}
+.float-wa:hover .float-wa__text,
+.float-wa:focus-visible .float-wa__text {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -50%);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s 0s;
+}
+
+/* Pulse */
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .6); }
+  50% { box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .9), 0 0 0 10px rgba(37, 211, 102, .12); }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .float-wa { width: 52px; height: 52px; bottom: 18px; right: 18px; }
+  .float-wa svg { width: 24px; height: 24px; }
+}
+
+/* Accessibility: no animation */
+@media (prefers-reduced-motion: reduce) {
+  .float-wa { animation: none; }
+}
+
+
+
+</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "AboutPage", "name": "About Ourika Atlas Guide", "mainEntity": {"@type": "TravelAgency", "name": "Ourika Atlas Guide", "description": "Local mountain guiding and trekking in the Ourika Valley and High Atlas, near Marrakech, Morocco.", "telephone": "+212661886234", "email": "trekkingatourika@gmail.com", "founder": {"@type": "Person", "name": "Mohamed Oudra"}, "sameAs": ["https://www.instagram.com/trekking_at_ourika/"]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who is Ourika Atlas Guide?", "acceptedAnswer": {"@type": "Answer", "text": "Ourika Atlas Guide is a local mountain guiding and trekking company based in the Ourika Valley, near Marrakech. Every experience is led by Mohamed Oudra, a Berber mountain guide who was born and raised in the valley."}}, {"@type": "Question", "name": "What Ourika Valley tours do you offer?", "acceptedAnswer": {"@type": "Answer", "text": "We offer Ourika Valley day trips from Marrakech, including the Atlas Trek and Setti Fatma Waterfalls Adventure, the Ourika Valley Hiking Adventure and the Atlas Trek and Berber Villages Experience. We also arrange activities around Marrakech on request."}}, {"@type": "Question", "name": "Do I need to be experienced to go hiking in the Atlas Mountains?", "acceptedAnswer": {"@type": "Answer", "text": "No. Atlas Mountains hiking with us can be shaped around your group. Tell us your fitness level and who is coming, including children or older travellers, and we will suggest a route that suits you."}}, {"@type": "Question", "name": "Can I visit the Setti Fatma waterfalls on a day trip from Marrakech?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The Setti Fatma waterfalls are part of our Atlas Trek and Setti Fatma Waterfalls Adventure in the Ourika Valley. Your guide confirms the timings and meeting point with you when you book."}}, {"@type": "Question", "name": "Do you offer private or small-group tours from Marrakech?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We run private tours and small-group tours, so you can explore at your own pace with a local guide. Send us your preferred date, group size and interests and we will plan the day with you."}}, {"@type": "Question", "name": "Why choose a local Berber mountain guide in Morocco?", "acceptedAnswer": {"@type": "Answer", "text": "A local guide knows the trails, the villages and the people of the High Atlas. With Mohamed, you walk through the Ourika Valley with someone who grew up there and can share its culture, traditions and landscapes first-hand."}}, {"@type": "Question", "name": "How do you support responsible and sustainable tourism?", "acceptedAnswer": {"@type": "Answer", "text": "We keep groups small, respect the villages and trails we walk through, and encourage guests to take their rubbish with them and to treat local communities with courtesy. Our aim is for the Ourika Valley to stay a good place to live and to visit."}}, {"@type": "Question", "name": "How do I book a day trip or ask a question?", "acceptedAnswer": {"@type": "Answer", "text": "The quickest way is WhatsApp on +212 661886234. You can also use the contact page or email trekkingatourika@gmail.com with your date, group size and the experience you have in mind."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" data-header="photo">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Ourika Atlas Guide — home">
+      <img class="brand__logo brand__logo--light" src="img/Logo/logo-white.png" alt="Ourika Atlas Guide" width="160" height="46" />
+      <img class="brand__logo brand__logo--dark" src="img/Logo/logo-black%20.png" alt="" width="160" height="46" />
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="tours.html">Day Trips</a>
+        <a href="index.html#activities">Activities</a>
+        <a href="about.html" aria-current="page">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="btn header__signin" href="contact.html">Plan a trip</a>
+    </nav>
+
+    <div class="header__tools">
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="thero thero--about on-photo" aria-labelledby="about-title">
+  <img class="thero__img" src="img/background-2.png" alt="Hikers walking through the green Ourika Valley in the High Atlas Mountains near Marrakech" width="2000" height="1333" fetchpriority="high" decoding="async" />
+  <div class="container thero__inner">
+    <p class="label thero__label">About Ourika Atlas Guide</p>
+    <h1 id="about-title">Your local guide to the Ourika Valley &amp; High Atlas</h1>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="story-title">
+  <div class="container story">
+    <h2 id="story-title" class="story__lead" data-reveal>Ourika Atlas Guide is a local mountain guiding and trekking company in the Ourika Valley, near Marrakech, sharing the Atlas Mountains the way people who live here know them.</h2>
+    <div class="story__cols" data-reveal>
+      <p>From Marrakech, the Ourika Valley is an easy escape to river terraces, Berber villages and the trails that lead to the Setti Fatma waterfalls. We run Ourika Valley day trips and Atlas Mountains hiking experiences for private groups and small groups, led by a local mountain guide who knows every path.</p>
+      <p>Authentic Berber culture is part of every day out. We keep groups small, respect the villages and trails we walk through, and encourage our guests to travel responsibly, so the valley stays a good place to live and to visit.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush-top" aria-label="Ourika Atlas Guide at a glance">
+  <div class="container figures">
+    <div class="figures__media" data-reveal>
+      <img src="img/Gallery/10.jpg" alt="Setti Fatma waterfalls in the Ourika Valley, a popular hiking day trip from Marrakech" width="1000" height="1250" loading="lazy" decoding="async" />
+    </div>
+    <dl class="figures__grid">
+      <div><dt>Based in</dt><dd>Ourika Valley</dd></div>
+      <div><dt>Starting point</dt><dd>Marrakech</dd></div>
+      <div><dt>Mountains</dt><dd>High Atlas</dd></div>
+      <div><dt>Waterfalls</dt><dd>Setti Fatma</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="section values" aria-labelledby="values-title">
+  <div class="container">
+    <div class="shead">
+      <p class="label">How we guide</p>
+      <h2 id="values-title">Local, authentic and responsible</h2>
+    </div>
+    <ol class="values__list">
+      <li><span class="label">01</span><h3>Local expertise</h3><p>Your Atlas Mountains guide lives in the Ourika Valley and knows its trails, villages, rivers and viewpoints.</p></li>
+      <li><span class="label">02</span><h3>Authentic Berber culture</h3><p>Walk through mountain villages and meet the traditions of the High Atlas through the eyes of a local.</p></li>
+      <li><span class="label">03</span><h3>Responsible tourism</h3><p>Small groups, respect for communities and the landscape, and a light footprint on every hike.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="guide-title">
+  <div class="container split">
+    <figure class="split__media" data-reveal>
+      <img src="img/Meet%20your%20guide.png" alt="Mohamed Oudra, Berber mountain guide from the Ourika Valley, wearing a straw hat" width="1100" height="1375" loading="lazy" decoding="async" />
+      <figcaption class="split__cap"><span class="label">Mohamed Oudra</span></figcaption>
+    </figure>
+    <div class="split__copy">
+      <p class="label">Meet your guide</p>
+      <h2 id="guide-title">Mohamed Oudra</h2>
+      <p>Mohamed is a 35-year-old Berber mountain guide, born and raised in the Ourika Valley. He grew up among the villages, river paths and High Atlas peaks he now shares with visitors who want to see the mountains beyond the viewpoints.</p>
+      <p>He guides guests through mountain villages, hiking trails and the Setti Fatma waterfalls, always with time for the culture, traditions and stories of his community. Mohamed is known for his hospitality, his local knowledge and tours shaped around each group.</p>
+      <dl class="ledger">
+        <div><dt>Years old</dt><dd>35</dd></div>
+        <div><dt>Born and raised in</dt><dd>Ourika Valley</dd></div>
+        <div><dt>Guide for</dt><dd>High Atlas</dd></div>
+      </dl>
+      <div class="split__actions">
+        <a class="btn btn--dark" href="https://wa.me/212661886234" target="_blank" rel="noopener">WhatsApp Mohamed</a>
+        <a class="btn btn--ghost" href="contact.html">Plan a trip</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush-top" aria-labelledby="offer-title">
+  <div class="container">
+    <div class="shead shead--split">
+      <div><p class="label">Day trips from Marrakech</p><h2 id="offer-title">Ourika Valley tours &amp; Atlas hiking</h2></div>
+      <a class="link-arrow" href="tours.html">Browse day trips <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    </div>
+    <div class="tgrid">
+      <article class="tcard"><div class="tcard__media"><img src="img/day-trips/Atlas%20Trek%20%26%20Setti%20Fatma%20Waterfalls%20Adventure.png" alt="Atlas trek to the Setti Fatma waterfalls in the Ourika Valley" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Trekking</span></div><div class="tcard__body"><p class="tcard__place">Setti Fatma, Ourika Valley</p><h3 class="tcard__name"><a href="tour.html">Atlas Trek &amp; Setti Fatma Waterfalls Adventure</a></h3><p class="tcard__foot"><span class="tcard__price">Ask on WhatsApp</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p></div></article>
+      <article class="tcard"><div class="tcard__media"><img src="img/day-trips/Ourika%20Valley%20Hiking%20Adventure.png" alt="Hiking trail through the Ourika Valley near Marrakech" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Hiking</span></div><div class="tcard__body"><p class="tcard__place">Ourika Valley, High Atlas</p><h3 class="tcard__name"><a href="tour.html">Ourika Valley Hiking Adventure</a></h3><p class="tcard__foot"><span class="tcard__price">Ask on WhatsApp</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p></div></article>
+      <article class="tcard"><div class="tcard__media"><img src="img/day-trips/Atlas%20Trek%20%26%20Berber%20Villages%20Experience.jpg" alt="Atlas trek through Berber villages near Marrakech" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Culture</span></div><div class="tcard__body"><p class="tcard__place">Berber villages, Atlas Mountains</p><h3 class="tcard__name"><a href="tour.html">Atlas Trek &amp; Berber Villages Experience</a></h3><p class="tcard__foot"><span class="tcard__price">Ask on WhatsApp</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush-top" aria-labelledby="faq-title">
+  <div class="container faq">
+    <div class="shead">
+      <p class="label">Good to know</p>
+      <h2 id="faq-title">Ourika Valley &amp; Atlas Mountains guide: FAQ</h2>
+      <p>Answers about Ourika Valley tours, Atlas Mountains hiking, the Setti Fatma waterfalls and private day trips from Marrakech.</p>
+    </div>
+    <div class="acc" data-accordion>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq1">Who is Ourika Atlas Guide?</button></h3>
+      <div class="acc__panel" id="faq1" hidden><p>Ourika Atlas Guide is a local mountain guiding and trekking company based in the Ourika Valley, near Marrakech. Every experience is led by Mohamed Oudra, a Berber mountain guide who was born and raised in the valley.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq2">What Ourika Valley tours do you offer?</button></h3>
+      <div class="acc__panel" id="faq2" hidden><p>We offer Ourika Valley day trips from Marrakech, including the Atlas Trek and Setti Fatma Waterfalls Adventure, the Ourika Valley Hiking Adventure and the Atlas Trek and Berber Villages Experience. We also arrange activities around Marrakech on request.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq3">Do I need to be experienced to go hiking in the Atlas Mountains?</button></h3>
+      <div class="acc__panel" id="faq3" hidden><p>No. Atlas Mountains hiking with us can be shaped around your group. Tell us your fitness level and who is coming, including children or older travellers, and we will suggest a route that suits you.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq4">Can I visit the Setti Fatma waterfalls on a day trip from Marrakech?</button></h3>
+      <div class="acc__panel" id="faq4" hidden><p>Yes. The Setti Fatma waterfalls are part of our Atlas Trek and Setti Fatma Waterfalls Adventure in the Ourika Valley. Your guide confirms the timings and meeting point with you when you book.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq5">Do you offer private or small-group tours from Marrakech?</button></h3>
+      <div class="acc__panel" id="faq5" hidden><p>Yes. We run private tours and small-group tours, so you can explore at your own pace with a local guide. Send us your preferred date, group size and interests and we will plan the day with you.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq6">Why choose a local Berber mountain guide in Morocco?</button></h3>
+      <div class="acc__panel" id="faq6" hidden><p>A local guide knows the trails, the villages and the people of the High Atlas. With Mohamed, you walk through the Ourika Valley with someone who grew up there and can share its culture, traditions and landscapes first-hand.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq7">How do you support responsible and sustainable tourism?</button></h3>
+      <div class="acc__panel" id="faq7" hidden><p>We keep groups small, respect the villages and trails we walk through, and encourage guests to take their rubbish with them and to treat local communities with courtesy. Our aim is for the Ourika Valley to stay a good place to live and to visit.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq8">How do I book a day trip or ask a question?</button></h3>
+      <div class="acc__panel" id="faq8" hidden><p>The quickest way is WhatsApp on +212 661886234. You can also use the contact page or email trekkingatourika@gmail.com with your date, group size and the experience you have in mind.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__lead">
+        <img class="footer__logo" src="img/Logo/logo-white.png" alt="Ourika Atlas Guide" width="160" height="56" loading="lazy" />
+        <p class="footer__title">Day trips &amp; Atlas experiences from Marrakech</p>
+        <p class="footer__sub">Local guide Mohamed Oudra, Ourika Valley and High Atlas, Morocco.</p>
+        <p class="footer__social">
+          <a href="https://wa.me/212661886234" target="_blank" rel="noopener" aria-label="Ourika Atlas Guide on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-3-.6-2.5-1-4.1-3.5-4.2-3.7-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.8.9c.3.1.5.2.5.3.1.2.1.8-.1 1.5Z"/></svg></a>
+          <a href="https://www.instagram.com/trekking_at_ourika/" target="_blank" rel="noopener" aria-label="Ourika Atlas Guide on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.google.com/search?kgmid=/g/11npl4gm96&amp;hl=en-MA&amp;q=Ourika+Atlas+Guide" target="_blank" rel="noopener" aria-label="Ourika Atlas Guide on Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></a>
+        </p>
+      </div>
+      <div class="footer__cols">
+        <div><p class="label footer__h">Explore</p><ul><li><a href="tours.html">Day Trips</a></li><li><a href="index.html#activities">Activities</a></li><li><a href="contact.html">Private experiences</a></li></ul></div>
+        <div><p class="label footer__h">Company</p><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><p class="label footer__h">Contact</p><address>Mohamed Oudra<br /><a href="tel:+212661886234">+212 661886234</a><br /><a href="mailto:trekkingatourika@gmail.com">trekkingatourika@gmail.com</a></address></div>
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">ourika atlas</p>
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Ourika Atlas Guide. All rights reserved.</p>
+      <p>Marrakech · Ourika Valley · High Atlas · Setti Fatma</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/212661886234" target="_blank" rel="noopener" class="float-wa" aria-label="Need help? Contact Ourika Atlas Guide on WhatsApp">
+  <span class="float-wa__text" aria-hidden="true">Need help?</span>
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M12.04 2.003c-5.53 0-10.02 4.49-10.02 10.02 0 1.77.46 3.5 1.34 5.02L2 22l5.11-1.34a10 10 0 0 0 4.93 1.3h.01c5.53 0 10.02-4.49 10.02-10.02 0-2.68-1.04-5.19-2.94-7.08a9.96 9.96 0 0 0-7.09-2.93Zm5.86 14.32c-.25.7-1.45 1.34-2 1.42-.53.08-1.11.11-3.24-.71-2.72-1.09-4.47-3.84-4.61-4.02-.14-.18-1.1-1.47-1.1-2.8 0-1.33.7-1.98.95-2.25.25-.27.55-.34.73-.34.18 0 .36 0 .52.01.17.01.39-.06.6.47.25.63.85 2.17.92 2.33.07.16.12.35.02.55-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.28 1.65 2.07 1.13 1.01 2.08 1.33 2.37 1.48.29.15.46.13.63-.08.17-.2.72-.85.92-1.14.2-.29.4-.24.66-.15.27.1 1.71.82 2 .97.29.15.48.22.55.34.07.13.07.75-.18 1.44Z"/>
+  </svg>
+</a>
+
+
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

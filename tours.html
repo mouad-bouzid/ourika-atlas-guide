@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Day Trips from Marrakech | Ourika Valley &amp; Atlas Mountains</title>
+<meta name="description" content="Day trips from Marrakech to the Ourika Valley, Setti Fatma waterfalls and Berber villages. Local guided hiking, culture and private Atlas Mountains tours." />
+<meta name="theme-color" content="#101412" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ourika Atlas Guide" />
+<meta property="og:title" content="Day Trips from Marrakech | Ourika Valley &amp; Atlas Mountains" />
+<meta property="og:description" content="Guided Ourika Valley day trips, Atlas Mountains hiking and Setti Fatma waterfalls with local guide Mohamed Oudra." />
+<meta property="og:image" content="img/2.jpg" />
+<link rel="icon" type="image/png" href="img/Logo/favicon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=SUSE:wght@400;500;600&family=Golos+Text:wght@400;500;600&family=Ubuntu+Sans+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/pages.css" />
+
+<style>
+/* ===== Ourika Atlas Guide: same overrides as the homepage (loaded after the template CSS) ===== */
+:root{--accent:#E4582C}
+html,body{overflow-x:clip}
+.label::before{content:"";display:inline-block;width:18px;height:1px;margin-right:.6rem;vertical-align:middle;background:var(--accent)}
+.footer__h::before{display:none}
+.btn--dark:hover{background:var(--accent)}
+.btn--ghost:hover{border-color:var(--accent);color:var(--accent)}
+.input:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px rgba(228,88,44,.15)}
+.nav a::after{background:var(--accent)}
+
+/* Header (logo + links + "Plan a trip" inside the nav, as on the homepage) */
+.brand{display:inline-flex;align-items:center;margin-right:auto}
+.brand__logo{height:46px;width:auto;max-width:52vw;object-fit:contain}
+.nav__links{display:contents}
+.nav a.header__signin{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:.8rem 1.5rem;border:1px solid currentColor;border-radius:var(--r-pill);font-family:var(--font-body);font-size:var(--text-base);font-weight:500;letter-spacing:0;line-height:1;color:inherit;background:transparent}
+.nav a.header__signin::after{display:none}
+.header[data-header] .nav a.header__signin:hover{background:var(--accent);border-color:var(--accent);color:var(--snow)}
+.menu-open .header[data-header]{-webkit-backdrop-filter:none;backdrop-filter:none}
+@media (min-width:961px){
+.nav__links{display:flex;align-items:center;gap:clamp(1.25rem,2.6vw,2.75rem)}
+.header__tools{display:none}
+.header__inner{display:grid;grid-template-columns:1fr auto 1fr;gap:2rem}
+.brand{grid-column:1;justify-self:start;margin-right:0}
+.nav{display:contents}
+.nav__links{grid-column:2}
+.nav a.header__signin{grid-column:3;justify-self:end}}
+@media (max-width:960px){
+.nav a.header__signin{margin-top:1.5rem;background:var(--pine);color:var(--snow);border-color:var(--pine)}}
+
+.acc__btn:hover::after{background:var(--accent);color:var(--snow)}
+.faq .shead p:not(.label){max-width:60ch}
+
+/* ===== Footer ===== */
+.footer{background:var(--pine-night);color:rgba(255,255,255,.72);padding-top:clamp(3.5rem,3rem + 3vw,6rem);overflow:hidden}
+.footer a:hover{color:var(--snow)}
+.footer__top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr);gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(255,255,255,.12)}
+.footer__logo{height:56px;width:auto;margin-bottom:1.25rem}
+.footer__title{font-family:var(--font-display);color:var(--snow);font-size:var(--text-xl);letter-spacing:-.025em;line-height:1.15}
+.footer__sub{margin-top:.75rem;max-width:42ch}
+.footer__social{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+.footer__social a{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.25);color:var(--snow);transition:background var(--dur-fast),border-color var(--dur-fast),transform var(--dur) var(--ease)}
+.footer__social a:hover{background:var(--accent);border-color:var(--accent);color:var(--snow);transform:translateY(-2px)}
+.footer__social svg{width:20px;height:20px}
+.footer__cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+.footer__h{color:rgba(255,255,255,.5);margin-bottom:1rem}
+.footer__cols li+li{margin-top:.55rem}.footer address{font-style:normal;line-height:1.9;overflow-wrap:anywhere}
+.footer__word{margin:.05em 0 0;padding-bottom:.12em;text-align:center;font-family:var(--font-display);font-weight:600;line-height:1.05;font-size:calc((min(100vw,var(--container)) - 2 * var(--gutter)) / 6.4);letter-spacing:-.04em;color:#18221F;user-select:none}
+.footer__bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem;padding-block:1.5rem 5rem;border-top:1px solid rgba(255,255,255,.12);font-size:var(--text-sm)}
+@media (max-width:900px){.footer__top{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:520px){.footer__cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ===== Floating WhatsApp (lower-left) ===== */
+.whatsapp-float{position:fixed;left:max(1rem,env(safe-area-inset-left));bottom:max(1rem,env(safe-area-inset-bottom));z-index:80;display:flex;align-items:center;max-width:calc(100vw - 2rem);border-radius:var(--r-pill)}
+.whatsapp-float img{width:58px;height:58px;flex:none;border-radius:50%;box-shadow:0 8px 24px -6px rgba(16,20,18,.45);transition:transform var(--dur) var(--ease)}
+.whatsapp-float__text{margin-left:-1.6rem;padding:.55rem 1rem .55rem 2.1rem;border-radius:var(--r-pill);background:var(--paper);color:var(--pine);border:1px solid var(--accent);font-size:var(--text-sm);font-weight:500;line-height:1;white-space:nowrap;box-shadow:var(--shadow-card);opacity:0;visibility:hidden;transform:translateX(-10px);transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease),visibility 0s var(--dur)}
+.whatsapp-float img{position:relative;z-index:1}
+.whatsapp-float:hover img,.whatsapp-float:focus-visible img{transform:scale(1.06)}
+.whatsapp-float:hover .whatsapp-float__text,.whatsapp-float:focus-visible .whatsapp-float__text{opacity:1;visibility:visible;transform:none;transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease),visibility 0s 0s}
+
+
+/* About page extras */
+.brand__logo--dark{display:none}
+.header.is-scrolled .brand__logo--light,.menu-open .brand__logo--light{display:none}
+.header.is-scrolled .brand__logo--dark,.menu-open .brand__logo--dark{display:block}
+.thero__img{object-position:50% 40%}
+.tcard__price{font-size:var(--text-base)}
+
+/* ===== Header scroll fix: stacked logos, solid bar, dark burger, no ghosting ===== */
+.brand{display:grid;align-items:center}
+.brand__logo{grid-area:1/1;transition:opacity var(--dur-fast) var(--ease)}
+.brand__logo--light,.brand__logo--dark{display:block!important}
+.brand__logo--dark{opacity:0;visibility:hidden}
+.header.is-scrolled .brand__logo--light,.menu-open .brand__logo--light{opacity:0;visibility:hidden}
+.header.is-scrolled .brand__logo--dark,.menu-open .brand__logo--dark{opacity:1;visibility:visible}
+.header{transition:background var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.header.is-scrolled{padding-block:.8rem;background:rgba(243,244,241,.97);color:var(--pine);box-shadow:0 1px 0 var(--fog-deep)}
+.header.is-scrolled::before{display:none}
+.header.is-scrolled .burger,.menu-open .burger{color:var(--pine)}
+@media (max-width:960px){.header,.header.is-scrolled,.menu-open .header{-webkit-backdrop-filter:none;backdrop-filter:none}}
+
+/* ===== Day Trips page extras ===== */
+.thero h1{max-width:22ch;font-size:clamp(2.2rem,1.4rem + 3.2vw,4.4rem)}
+.thero__sub{max-width:60ch;color:var(--snow-soft);font-size:var(--text-md)}
+.thero__inner{gap:1.1rem}
+.chip:hover{border-color:var(--accent)}
+.tcard__desc{font-size:var(--text-sm);color:var(--pine-mute)}
+.tcard__facts svg{color:var(--accent)}
+.shead__sub{max-width:60ch;font-family:var(--font-body);font-size:var(--text-md);font-weight:400;letter-spacing:0;line-height:1.5;color:var(--pine-mute)}
+.dest-strip .dtile{min-height:320px}
+.dest-strip .dtile::after{background:linear-gradient(to top,rgba(8,12,10,.88) 0%,rgba(8,12,10,.45) 45%,rgba(8,12,10,0) 75%)}
+.dtile__desc{font-size:var(--text-xs);line-height:1.45;color:var(--snow-soft)}
+.dtile__cta{display:inline-flex;align-items:center;gap:.4rem;margin-top:.5rem;font-size:var(--text-sm);font-weight:500;color:var(--snow)}
+.dtile__cta svg{width:14px;height:14px;transition:transform var(--dur) var(--ease)}
+.dtile:hover .dtile__cta{color:var(--accent)}.dtile:hover .dtile__cta svg{transform:translate(3px,-3px)}
+.why__text{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;margin-bottom:clamp(2rem,4vw,3rem);font-size:var(--text-md)}
+@media (max-width:760px){.why__text{grid-template-columns:minmax(0,1fr)}}
+
+
+
+
+
+/* ===== Floating WhatsApp button =====
+   Uses the site variables from index.html: --paper, --pine, --accent,
+   --r-pill, --text-sm, --shadow-card, --dur, --ease. */
+
+.float-wa {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  z-index: 900;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .6);
+  animation: wa-pulse 2.4s ease-in-out infinite;
+  text-decoration: none;
+  touch-action: manipulation;
+}
+.float-wa svg { width: 29px; height: 29px; fill: #fff; }
+
+/* "Need help?" label — shown on hover / keyboard focus */
+.float-wa__text {
+  position: absolute;
+  right: calc(100% + 12px);
+  top: 50%;
+  transform: translate(8px, -50%);
+  padding: .6rem 1rem;
+  border-radius: var(--r-pill);
+  background: var(--paper);
+  color: var(--pine);
+  border: 1px solid var(--accent);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s var(--dur);
+}
+.float-wa:hover .float-wa__text,
+.float-wa:focus-visible .float-wa__text {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -50%);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease), visibility 0s 0s;
+}
+
+/* Pulse */
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .6); }
+  50% { box-shadow: 0 12px 26px -8px rgba(37, 211, 102, .9), 0 0 0 10px rgba(37, 211, 102, .12); }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .float-wa { width: 52px; height: 52px; bottom: 18px; right: 18px; }
+  .float-wa svg { width: 24px; height: 24px; }
+}
+
+/* Accessibility: no animation */
+@media (prefers-reduced-motion: reduce) {
+  .float-wa { animation: none; }
+}
+
+
+
+</style>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Day Trips from Marrakech | Ourika Valley & Atlas Mountains", "about": {"@type": "TravelAgency", "name": "Ourika Atlas Guide", "telephone": "+212661886234", "email": "trekkingatourika@gmail.com", "sameAs": ["https://www.instagram.com/trekking_at_ourika/"]}, "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Atlas Trek & Setti Fatma Waterfalls Adventure"}, {"@type": "ListItem", "position": 2, "name": "Ourika Valley Day Trip from Marrakech"}, {"@type": "ListItem", "position": 3, "name": "Berber Villages Walking Experience"}, {"@type": "ListItem", "position": 4, "name": "Atlas Mountains Hiking Tour"}, {"@type": "ListItem", "position": 5, "name": "Setti Fatma Waterfalls Discovery"}, {"@type": "ListItem", "position": 6, "name": "Traditional Berber Culture Experience"}, {"@type": "ListItem", "position": 7, "name": "Ourika Valley Nature & Photography Tour"}, {"@type": "ListItem", "position": 8, "name": "Private Atlas Mountains Adventure"}, {"@type": "ListItem", "position": 9, "name": "Full-Day Ourika Valley Exploration"}]}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How far is the Ourika Valley from Marrakech?", "acceptedAnswer": {"@type": "Answer", "text": "The Ourika Valley lies south of Marrakech in the High Atlas. The valley starts roughly 30 to 40 km from the city, and Setti Fatma at the end of the valley road is around 60 km away. The drive usually takes about an hour to an hour and a half depending on traffic and stops. Your guide confirms the pick-up and timings when you book."}}, {"@type": "Question", "name": "Is the Setti Fatma hike suitable for beginners?", "acceptedAnswer": {"@type": "Answer", "text": "The Setti Fatma waterfalls hike follows mountain paths with some uneven and rocky ground. Many visitors enjoy it, and we can adapt the route to your group. Tell us your fitness level and who is coming and we will recommend the right Ourika Valley hike."}}, {"@type": "Question", "name": "What should I bring for a mountain hike?", "acceptedAnswer": {"@type": "Answer", "text": "Wear comfortable walking shoes with good grip and bring water, sun protection, a hat and a light extra layer, as it can be cooler in the mountains. A small backpack and a camera are useful. We can share a full checklist once your trip is confirmed."}}, {"@type": "Question", "name": "Are private tours available?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Private tours from Marrakech are available for couples, families and small groups. Send us your date, group size and interests, such as hiking, waterfalls, Berber villages or culture, and we will shape the day with you."}}, {"@type": "Question", "name": "Is lunch included?", "acceptedAnswer": {"@type": "Answer", "text": "What is included depends on the day trip you choose. We confirm clearly whether lunch is part of your experience when you book, and you can tell us about any dietary needs in advance."}}, {"@type": "Question", "name": "Can children join the tours?", "acceptedAnswer": {"@type": "Answer", "text": "Families are welcome to get in touch. Some routes suit children better than others, so tell us the ages of the children and we will suggest a gentle Ourika Valley outing or a private tour at their pace."}}, {"@type": "Question", "name": "What is the best season to visit the Ourika Valley?", "acceptedAnswer": {"@type": "Answer", "text": "The Ourika Valley can be visited throughout the year. Spring and autumn are often popular for hiking because the weather is milder, summer is warm so earlier starts help, and winter can be cold in the mountains. Ask us about conditions for your dates."}}, {"@type": "Question", "name": "Are local guides included?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Your day is led by Mohamed Oudra, a local Berber mountain guide born and raised in the Ourika Valley, who knows the trails, the villages and the area around Setti Fatma."}}, {"@type": "Question", "name": "How do I book a day trip from Marrakech?", "acceptedAnswer": {"@type": "Answer", "text": "The quickest way is WhatsApp on +212 661 886 234. You can also email trekkingatourika@gmail.com or use the contact page with your preferred date, group size and the experience you have in mind."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header" data-header="photo">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Ourika Atlas Guide — home">
+      <img class="brand__logo brand__logo--light" src="img/Logo/logo-white.png" alt="Ourika Atlas Guide" width="160" height="46" />
+      <img class="brand__logo brand__logo--dark" src="img/Logo/logo-black%20.png" alt="" width="160" height="46" />
+    </a>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="tours.html" aria-current="page">Day Trips</a>
+        <a href="#activities">Activities</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <a class="btn header__signin" href="contact.html">Plan a trip</a>
+    </nav>
+    <div class="header__tools">
+      <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="thero on-photo" aria-labelledby="tours-title">
+  <img class="thero__img" src="img/background-2.png" alt="Atlas Mountains and Ourika Valley landscape near Marrakech" width="2000" height="1333" fetchpriority="high" decoding="async" />
+  <div class="container thero__inner">
+    <p class="label thero__label">Local guided experiences</p>
+    <h1 id="tours-title">Day Trips &amp; Atlas Mountain Adventures from Marrakech</h1>
+    <p class="thero__sub">Discover authentic experiences in the Ourika Valley with local mountain guides. Explore Berber villages, scenic hiking trails, Setti Fatma waterfalls, traditional culture, and unforgettable Atlas Mountain landscapes.</p>
+  </div>
+</section>
+
+<section class="container section" aria-label="Day trips and tours">
+  <h2 class="sr-only">Ourika Valley day trips and Atlas Mountains tours</h2>
+  <div class="toolbar">
+    <div class="chips" role="group" aria-label="Tour category">
+      <button class="chip" type="button" data-kind-chip="all" aria-pressed="true">All Tours</button>
+      <button class="chip" type="button" data-kind-chip="hiking" aria-pressed="false">Hiking</button>
+      <button class="chip" type="button" data-kind-chip="waterfalls" aria-pressed="false">Waterfalls</button>
+      <button class="chip" type="button" data-kind-chip="culture" aria-pressed="false">Culture</button>
+      <button class="chip" type="button" data-kind-chip="nature" aria-pressed="false">Nature</button>
+      <button class="chip" type="button" data-kind-chip="private" aria-pressed="false">Private Tours</button>
+    </div>
+  </div>
+
+  <p class="results-meta" aria-live="polite">Showing <span data-tour-count>9 tours</span></p>
+
+  <div class="tgrid" data-tour-grid>
+        <article class="tcard" data-kind="waterfalls" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/day-trips/Atlas%20Trek%20%26%20Setti%20Fatma%20Waterfalls%20Adventure.png" alt="Atlas trek to the Setti Fatma waterfalls in the Ourika Valley, High Atlas" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Waterfalls</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Setti Fatma, Ourika Valley</p>
+            <h3 class="tcard__name"><a href="tour.html">Atlas Trek &amp; Setti Fatma Waterfalls Adventure</a></h3>
+            <p class="tcard__desc">Trek through the High Atlas to the Setti Fatma waterfalls with a local mountain guide.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Day trip</span><span>Moderate</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="nature" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/Ourika-Valley-Day-Trip from-Marrakech.jpg" alt="Ourika Valley day trip from Marrakech, green river valley in the Atlas" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Nature</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Ourika Valley, near Marrakech</p>
+            <h3 class="tcard__name"><a href="tour.html">Ourika Valley Day Trip from Marrakech</a></h3>
+            <p class="tcard__desc">A day trip from Marrakech into the green Ourika Valley, its villages and river views.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Day trip</span><span>Easy</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="culture" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/day-trips/Atlas%20Trek%20%26%20Berber%20Villages%20Experience.jpg" alt="Walking through a Berber village in the Atlas Mountains near Marrakech" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Culture</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Berber villages, Atlas Mountains</p>
+            <h3 class="tcard__name"><a href="tour.html">Berber Villages Walking Experience</a></h3>
+            <p class="tcard__desc">A walking experience through traditional Berber villages in the Atlas Mountains.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Day trip</span><span>Easy</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="hiking" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/day-trips/Ourika%20Valley%20Hiking%20Adventure.png" alt="Hiking trail through the Ourika Valley, an Atlas Mountains hike near Marrakech" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Hiking</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Ourika Valley, High Atlas</p>
+            <h3 class="tcard__name"><a href="tour.html">Atlas Mountains Hiking Tour</a></h3>
+            <p class="tcard__desc">Atlas Mountains hiking on scenic trails above the Ourika Valley, led by a local guide.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Day trip</span><span>Moderate</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="waterfalls" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/Setti-Fatma- Waterfalls -Hike.png" alt="Setti Fatma waterfalls in the Ourika Valley near Marrakech" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Waterfalls</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Setti Fatma, Ourika Valley</p>
+            <h3 class="tcard__name"><a href="tour.html">Setti Fatma Waterfalls Discovery</a></h3>
+            <p class="tcard__desc">Discover the cascades of Setti Fatma, at the end of the Ourika Valley road.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Day trip</span><span>Easy to moderate</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="culture" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/Gallery/4.jpg" alt="Moroccan mint tea prepared by a local host during a Berber culture experience" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Culture</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>High Atlas villages</p>
+            <h3 class="tcard__name"><a href="tour.html">Traditional Berber Culture Experience</a></h3>
+            <p class="tcard__desc">Share Berber traditions, hospitality and everyday life with a local guide.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Day trip</span><span>Easy</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="nature" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/Gallery/6.jpg" alt="Red hills and valley landscape in the High Atlas for nature and photography" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Nature</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Ourika Valley, High Atlas</p>
+            <h3 class="tcard__name"><a href="tour.html">Ourika Valley Nature &amp; Photography Tour</a></h3>
+            <p class="tcard__desc">Valley landscapes, mountain light and quiet corners for nature and photography lovers.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Day trip</span><span>Easy</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="private" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/Gallery/10.jpg" alt="Travellers with their private guide in the Atlas Mountains near Marrakech" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Private</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>From Marrakech</p>
+            <h3 class="tcard__name"><a href="tour.html">Private Atlas Mountains Adventure</a></h3>
+            <p class="tcard__desc">A private day in the Atlas Mountains shaped around your group, pace and interests.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Flexible</span><span>Tailored to you</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+        <article class="tcard" data-kind="hiking" data-price="0" data-days="1">
+          <div class="tcard__media"><img src="img/Gallery/5.jpg" alt="Hiking group on a trail during a full-day Ourika Valley exploration" width="800" height="600" loading="lazy" decoding="async" /><span class="tcard__kind">Hiking</span></div>
+          <div class="tcard__body">
+            <p class="tcard__place"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Ourika Valley, High Atlas</p>
+            <h3 class="tcard__name"><a href="tour.html">Full-Day Ourika Valley Exploration</a></h3>
+            <p class="tcard__desc">A full day to explore the Ourika Valley and its mountain scenery at a relaxed pace.</p>
+            <p class="tcard__facts"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Full day</span><span>Easy to moderate</span></p>
+            <p class="tcard__foot"><span class="tcard__price">Discover more</span><span class="tcard__go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></p>
+          </div>
+        </article>
+  </div>
+
+  <div class="empty" data-tour-empty hidden>
+    <h2>No tours match that category</h2>
+    <p>Try another category or see all of our Ourika Valley day trips.</p>
+    <button class="btn btn--dark" type="button" data-tour-reset>Show all tours</button>
+  </div>
+</section>
+
+<section class="section section--flush-top" id="activities" aria-labelledby="where-title">
+  <div class="container">
+    <div class="shead">
+      <p class="label">What we offer</p>
+      <h2 id="where-title">Our Activities</h2>
+      <h3 class="shead__sub">Explore Authentic Experiences in the Atlas Mountains</h3>
+    </div>
+    <div class="dest-strip">
+        <a class="dtile" href="contact.html">
+          <img src="img/Ourika-Valley-Day-Trip from-Marrakech.jpg" alt="Ourika Valley day trip from Marrakech" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Ourika Valley Day Trip</span><span class="dtile__desc">A relaxed day trip from Marrakech into the green Ourika Valley with a local guide.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Day Trips</span>
+        </a>
+        
+        <a class="dtile" href="contact.html">
+          <img src="img/Gallery/7.jpg" alt="Berber village in the Atlas Mountains" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Berber Villages Experience</span><span class="dtile__desc">Walk through traditional mountain villages and meet the local way of life.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Culture</span>
+        </a>
+        <a class="dtile" href="contact.html">
+          <img src="img/background-2.png" alt="Hikers in the High Atlas Mountains above the Ourika Valley" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">High Atlas Mountains Hiking</span><span class="dtile__desc">Hiking trails and viewpoints in the High Atlas, at a pace that suits your group.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Hiking</span>
+        </a>
+        <a class="dtile" href="contact.html">
+          <img src="img/Setti-Fatma-Waterfalls-Hike.png" alt="Setti Fatma waterfalls in the Ourika Valley" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Setti Fatma Waterfalls Discovery</span><span class="dtile__desc">Discover the cascades of Setti Fatma at the end of the Ourika Valley.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Waterfalls</span>
+        </a>
+        <a class="dtile" href="contact.html">
+          <img src="img/Gallery/4.jpg" alt="Moroccan mint tea prepared by a local host" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Traditional Berber Culture Experience</span><span class="dtile__desc">Share the traditions, hospitality and daily life of Berber communities.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Culture</span>
+        </a>
+        
+        <a class="dtile" href="contact.html">
+          <img src="img/Gallery/9.jpg" alt="Guide and guests on a mountain path for a nature and photography tour" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Nature &amp; Photography Tour</span><span class="dtile__desc">Landscapes, light and valley views for travellers who love photography.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Nature</span>
+        </a>
+        <a class="dtile" href="contact.html">
+          <img src="img/Gallery/10.jpg" alt="Private Atlas Mountains experience with a local guide" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Private Atlas Mountains Experience</span><span class="dtile__desc">A private day shaped around your group, your pace and your interests.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Private</span>
+        </a>
+        <a class="dtile" href="contact.html">
+          <img src="img/Gallery/2.jpg" alt="Family-friendly Ourika Valley excursion with a local guide" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Family-Friendly Ourika Valley Excursion</span><span class="dtile__desc">A gentle Ourika Valley outing planned with families in mind.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Family</span>
+        </a>
+        <a class="dtile" href="contact.html">
+          <img src="img/Gallery/1.jpg" alt="Guests sharing a local meal in the Ourika Valley" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Local Food &amp; Cultural Discovery</span><span class="dtile__desc">Taste local flavours and learn about everyday life in the valley.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Culture</span>
+        </a>
+        <a class="dtile" href="contact.html">
+          <img src="img/Gallery/5.jpg" alt="Hiking group on a full-day Atlas exploration" width="1100" height="733" loading="lazy" decoding="async" />
+          <span class="dtile__meta"><span class="dtile__name">Full-Day Atlas Exploration</span><span class="dtile__desc">A full day to explore the Atlas Mountains and Ourika Valley at an easy pace.</span><span class="dtile__cta">Discover more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span></span>
+          <span class="dtile__count">Day Trips</span>
+        </a>
+    </div>
+  </div>
+</section>
+
+<section class="section values" aria-labelledby="why-title">
+  <div class="container">
+    <div class="shead">
+      <p class="label">Local guide, local valley</p>
+      <h2 id="why-title">Why Visit the Ourika Valley?</h2>
+    </div>
+    <div class="why__text">
+      <p>The Ourika Valley is one of the most rewarding day trips from Marrakech. Within a short journey you leave the city behind and enter the High Atlas, where terraced fields, red-earth villages and a mountain river set the scene for Atlas Mountains hiking, Setti Fatma waterfalls and quiet viewpoints.</p>
+      <p>With a local mountain guide, the valley becomes more than scenery. You walk through traditional Berber villages, hear the stories behind the landscape and experience Moroccan hospitality first-hand, on private tours or in small groups.</p>
+    </div>
+    <ol class="values__list">
+      <li><span class="label">01</span><h3>Atlas Mountains &amp; hiking trails</h3><p>Trails for every pace, from gentle valley walks to longer Atlas Mountains hikes with sweeping views.</p></li>
+      <li><span class="label">02</span><h3>Berber culture &amp; traditional villages</h3><p>Meet the traditions, hospitality and daily life of the mountain communities with a guide born in the valley.</p></li>
+      <li><span class="label">03</span><h3>Setti Fatma waterfalls &amp; nature</h3><p>Follow the river to the cascades of Setti Fatma and enjoy fresh mountain air, greenery and photo-worthy landscapes.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="faq-title">
+  <div class="container faq">
+    <div class="shead">
+      <p class="label">Good to know</p>
+      <h2 id="faq-title">Ourika Valley day trips: frequently asked questions</h2>
+      <p>Answers about Ourika Valley tours, Setti Fatma waterfalls, Atlas Mountains hiking and private day trips from Marrakech.</p>
+    </div>
+    <div class="acc" data-accordion>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq1">How far is the Ourika Valley from Marrakech?</button></h3>
+      <div class="acc__panel" id="faq1" hidden><p>The Ourika Valley lies south of Marrakech in the High Atlas. The valley starts roughly 30 to 40 km from the city, and Setti Fatma at the end of the valley road is around 60 km away. The drive usually takes about an hour to an hour and a half depending on traffic and stops. Your guide confirms the pick-up and timings when you book.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq2">Is the Setti Fatma hike suitable for beginners?</button></h3>
+      <div class="acc__panel" id="faq2" hidden><p>The Setti Fatma waterfalls hike follows mountain paths with some uneven and rocky ground. Many visitors enjoy it, and we can adapt the route to your group. Tell us your fitness level and who is coming and we will recommend the right Ourika Valley hike.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq3">What should I bring for a mountain hike?</button></h3>
+      <div class="acc__panel" id="faq3" hidden><p>Wear comfortable walking shoes with good grip and bring water, sun protection, a hat and a light extra layer, as it can be cooler in the mountains. A small backpack and a camera are useful. We can share a full checklist once your trip is confirmed.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq4">Are private tours available?</button></h3>
+      <div class="acc__panel" id="faq4" hidden><p>Yes. Private tours from Marrakech are available for couples, families and small groups. Send us your date, group size and interests, such as hiking, waterfalls, Berber villages or culture, and we will shape the day with you.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq5">Is lunch included?</button></h3>
+      <div class="acc__panel" id="faq5" hidden><p>What is included depends on the day trip you choose. We confirm clearly whether lunch is part of your experience when you book, and you can tell us about any dietary needs in advance.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq6">Can children join the tours?</button></h3>
+      <div class="acc__panel" id="faq6" hidden><p>Families are welcome to get in touch. Some routes suit children better than others, so tell us the ages of the children and we will suggest a gentle Ourika Valley outing or a private tour at their pace.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq7">What is the best season to visit the Ourika Valley?</button></h3>
+      <div class="acc__panel" id="faq7" hidden><p>The Ourika Valley can be visited throughout the year. Spring and autumn are often popular for hiking because the weather is milder, summer is warm so earlier starts help, and winter can be cold in the mountains. Ask us about conditions for your dates.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq8">Are local guides included?</button></h3>
+      <div class="acc__panel" id="faq8" hidden><p>Yes. Your day is led by Mohamed Oudra, a local Berber mountain guide born and raised in the Ourika Valley, who knows the trails, the villages and the area around Setti Fatma.</p></div>
+      <h3><button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq9">How do I book a day trip from Marrakech?</button></h3>
+      <div class="acc__panel" id="faq9" hidden><p>The quickest way is WhatsApp on +212 661 886 234. You can also email trekkingatourika@gmail.com or use the contact page with your preferred date, group size and the experience you have in mind.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section closer" aria-labelledby="closer-cta">
+  <div class="container closer__card">
+    <div><p class="label">Ready when you are</p><h2 id="closer-cta">Tell us what you&rsquo;d like to explore</h2></div>
+    <div class="closer__actions">
+      <a class="btn btn--dark" href="https://wa.me/212661886234" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="btn btn--ghost" href="contact.html">Plan a trip</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__lead">
+        <img class="footer__logo" src="img/Logo/logo-white.png" alt="Ourika Atlas Guide" width="160" height="56" loading="lazy" />
+        <p class="footer__title">Day trips &amp; Atlas experiences from Marrakech</p>
+        <p class="footer__sub">Local guide Mohamed Oudra, Ourika Valley and High Atlas, Morocco.</p>
+        <p class="footer__social">
+          <a href="https://wa.me/212661886234" target="_blank" rel="noopener" aria-label="Ourika Atlas Guide on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.8 14.2c-.2.7-1.4 1.3-1.9 1.3-.5.1-1.1.1-3-.6-2.5-1-4.1-3.5-4.2-3.7-.1-.2-1-1.3-1-2.5s.6-1.8.9-2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.8.9c.3.1.5.2.5.3.1.2.1.8-.1 1.5Z"/></svg></a>
+          <a href="https://www.instagram.com/trekking_at_ourika/" target="_blank" rel="noopener" aria-label="Ourika Atlas Guide on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.google.com/search?kgmid=/g/11npl4gm96&amp;hl=en-MA&amp;q=Ourika+Atlas+Guide" target="_blank" rel="noopener" aria-label="Ourika Atlas Guide on Google Maps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></a>
+        </p>
+      </div>
+      <div class="footer__cols">
+        <div><p class="label footer__h">Explore</p><ul><li><a href="tours.html">Day Trips</a></li><li><a href="#activities">Activities</a></li><li><a href="contact.html">Private experiences</a></li></ul></div>
+        <div><p class="label footer__h">Company</p><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><p class="label footer__h">Contact</p><address>Mohamed Oudra<br /><a href="tel:+212661886234">+212 661886234</a><br /><a href="mailto:trekkingatourika@gmail.com">trekkingatourika@gmail.com</a></address></div>
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">ourika atlas</p>
+    <div class="footer__bottom">
+      <p>&copy; <span data-year>2026</span> Ourika Atlas Guide. All rights reserved.</p>
+      <p>Marrakech · Ourika Valley · High Atlas · Setti Fatma</p>
+    </div>
+  </div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/212661886234" target="_blank" rel="noopener" class="float-wa" aria-label="Need help? Contact Ourika Atlas Guide on WhatsApp">
+  <span class="float-wa__text" aria-hidden="true">Need help?</span>
+  <svg viewBox="0 0 24 24" fill="white" aria-hidden="true">
+    <path d="M12.04 2.003c-5.53 0-10.02 4.49-10.02 10.02 0 1.77.46 3.5 1.34 5.02L2 22l5.11-1.34a10 10 0 0 0 4.93 1.3h.01c5.53 0 10.02-4.49 10.02-10.02 0-2.68-1.04-5.19-2.94-7.08a9.96 9.96 0 0 0-7.09-2.93Zm5.86 14.32c-.25.7-1.45 1.34-2 1.42-.53.08-1.11.11-3.24-.71-2.72-1.09-4.47-3.84-4.61-4.02-.14-.18-1.1-1.47-1.1-2.8 0-1.33.7-1.98.95-2.25.25-.27.55-.34.73-.34.18 0 .36 0 .52.01.17.01.39-.06.6.47.25.63.85 2.17.92 2.33.07.16.12.35.02.55-.1.2-.15.32-.3.5-.15.18-.31.4-.44.53-.15.15-.3.31-.13.6.17.3.76 1.28 1.65 2.07 1.13 1.01 2.08 1.33 2.37 1.48.29.15.46.13.63-.08.17-.2.72-.85.92-1.14.2-.29.4-.24.66-.15.27.1 1.71.82 2 .97.29.15.48.22.55.34.07.13.07.75-.18 1.44Z"/>
+  </svg>
+</a>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

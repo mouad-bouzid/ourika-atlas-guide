@@ -1,0 +1,195 @@
+/* ==========================================================================
+   Fjelvik — design tokens, reset, primitives
+   One file drives the whole template. Change a colour here, not in a page.
+   ========================================================================== */
+
+:root {
+  /* Ground + ink -------------------------------------------------------- */
+  --fog:          #F3F4F1;   /* page ground — cool off-white               */
+  --paper:        #FFFFFF;   /* cards, booking panel, inputs               */
+  --fog-deep:     #E6E9E4;   /* hairlines on fog, tab track                */
+  --line:         #DCE1DB;   /* input borders                              */
+  --pine:         #101412;   /* headings, primary buttons (17.9:1 on fog)  */
+  --pine-soft:    #3A423E;   /* body copy (10.2:1 on fog)                  */
+  --pine-mute:    #66706B;   /* meta text (4.9:1 on fog)                   */
+  --pine-night:   #0B1210;   /* footer / dark bands                        */
+
+  /* The only colour: glacier melt, used as a FIELD not a mark ----------- */
+  --glacier:      #D5E4E1;
+  --glacier-hi:   #E6F0EE;
+  --glacier-deep: #B9D0CB;
+
+  /* Light ink that sits on photographs — never remap these in a dark band */
+  --snow:         #FFFFFF;
+  --snow-soft:    rgba(255, 255, 255, .82);
+  --snow-line:    rgba(255, 255, 255, .34);
+
+  /* Type ------------------------------------------------------------------ */
+  --font-display: "SUSE", "Golos Text", system-ui, sans-serif;
+  --font-body:    "Golos Text", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:    "Ubuntu Sans Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --text-xs:   .75rem;
+  --text-sm:   .875rem;
+  --text-base: 1rem;
+  --text-md:   clamp(1.0625rem, 1rem + .25vw, 1.1875rem);
+  --text-lg:   clamp(1.25rem, 1.1rem + .6vw, 1.5rem);
+  --text-xl:   clamp(1.6rem, 1.3rem + 1.2vw, 2.25rem);
+  --text-2xl:  clamp(2rem, 1.5rem + 2vw, 3.25rem);
+  --text-hero: clamp(2.6rem, 1.6rem + 3.6vw, 5rem);
+
+  /* Space + shape --------------------------------------------------------- */
+  --container: 1320px;
+  --gutter:    clamp(1rem, .5rem + 2.4vw, 3rem);
+  --section:   clamp(4rem, 3rem + 4vw, 7.5rem);
+
+  --r-sm:   10px;
+  --r-md:   18px;
+  --r-lg:   28px;
+  --r-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgba(16, 20, 18, .06), 0 18px 48px -18px rgba(16, 20, 18, .28);
+  --shadow-lift: 0 30px 70px -30px rgba(16, 20, 18, .45);
+
+  --ease:     cubic-bezier(.2, .7, .2, 1);
+  --dur-fast: 160ms;
+  --dur:      320ms;
+
+  --z-header: 50;
+  --z-menu:   60;
+}
+
+/* Reset ------------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--fog);
+  color: var(--pine-soft);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img, svg, video { display: block; max-width: 100%; }
+img { height: auto; }
+h1, h2, h3, h4 {
+  margin: 0;
+  color: var(--pine);
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -.025em;
+}
+p { margin: 0; }
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+:focus-visible { outline: 2px solid var(--pine); outline-offset: 3px; border-radius: 6px; }
+.on-photo :focus-visible { outline-color: var(--snow); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* Layout primitives ------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.section { padding-block: var(--section); }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.skip {
+  position: absolute; left: 1rem; top: -4rem; z-index: 100;
+  background: var(--pine); color: var(--snow);
+  padding: .7rem 1.1rem; border-radius: var(--r-pill);
+  transition: top var(--dur-fast) var(--ease);
+}
+.skip:focus { top: 1rem; }
+
+/* Labels ------------------------------------------------------------------ */
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--pine-mute);
+}
+
+/* Buttons ----------------------------------------------------------------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+  min-height: 48px; padding: .8rem 1.5rem;
+  border: 1px solid transparent; border-radius: var(--r-pill);
+  font-weight: 500; font-size: var(--text-base); line-height: 1;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease),
+              border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.btn:active { transform: translateY(1px); }
+.btn--dark  { background: var(--pine); color: var(--snow); }
+.btn--dark:hover { background: #26302B; }
+.btn--glacier { background: var(--glacier); color: var(--pine); }
+.btn--glacier:hover { background: var(--glacier-deep); }
+.btn--ghost { border-color: var(--line); color: var(--pine); background: transparent; }
+.btn--ghost:hover { border-color: var(--pine); }
+.btn--outline-snow { border-color: var(--snow-line); color: var(--snow); }
+.btn--outline-snow:hover { background: var(--snow); color: var(--pine); border-color: var(--snow); }
+.btn--block { width: 100%; }
+
+/* The tourex "pill + circle" call to action */
+.cta-orbit {
+  display: inline-flex; align-items: center; gap: 0;
+  border-radius: var(--r-pill);
+  font-weight: 500;
+}
+.cta-orbit__text {
+  display: inline-flex; align-items: center;
+  min-height: 60px; padding: 0 3.6rem 0 1.8rem;
+  border-radius: var(--r-pill);
+  background: var(--glacier); color: var(--pine);
+  transition: background var(--dur-fast) var(--ease);
+}
+.cta-orbit__dot {
+  display: grid; place-items: center;
+  width: 60px; height: 60px; margin-left: -2.4rem;
+  border-radius: 50%;
+  background: var(--pine); color: var(--snow);
+  box-shadow: 0 0 0 5px var(--glacier-hi);
+  transition: transform var(--dur) var(--ease);
+}
+.cta-orbit__dot svg { width: 22px; height: 22px; }
+.cta-orbit:hover .cta-orbit__text { background: var(--glacier-deep); }
+.cta-orbit:hover .cta-orbit__dot { transform: rotate(45deg); }
+
+/* Form fields ------------------------------------------------------------- */
+.field { display: grid; gap: .5rem; }
+.field__label { font-size: var(--text-sm); color: var(--pine); font-weight: 500; }
+.input {
+  display: flex; align-items: center; gap: .65rem;
+  width: 100%; min-height: 50px; padding: 0 1.1rem;
+  background: var(--paper);
+  border: 1px solid var(--line); border-radius: var(--r-pill);
+  color: var(--pine); font-size: var(--text-sm);
+  transition: border-color var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease);
+}
+.input svg { width: 18px; height: 18px; flex: none; color: var(--pine-mute); }
+.input input, .input select {
+  flex: 1; min-width: 0; height: 48px;
+  border: 0; background: transparent; outline: none;
+  appearance: none; -webkit-appearance: none;
+}
+.input:focus-within { border-color: var(--pine); box-shadow: 0 0 0 3px var(--glacier); }
+textarea.input { min-height: 140px; padding: 1rem 1.2rem; border-radius: var(--r-md); resize: vertical; }
